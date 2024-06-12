@@ -1,0 +1,20 @@
+n=int(input())
+m=list(map(int,input().split()))
+def zero(m):
+    for i in m:
+        if i==0:
+            m.remove(i)
+        while i>0:
+            if i%10==0:
+                m.remove(i)
+            i//=10
+    a=len(m)
+    if a%2==0:
+        mid1=a//2 -1
+        mid2=a//2
+        mid=(m[mid1]+m[mid2])/2
+        print(mid)
+    else:
+        odd_mid=a//2
+        print(m[odd_mid])
+zero(m)

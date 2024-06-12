@@ -1,0 +1,9 @@
+
+n=int(input())
+m=str(n)
+if m[0] != 0:
+    if '0' in m:
+        print("it is duck number")
+    else:
+        print("not")
+
